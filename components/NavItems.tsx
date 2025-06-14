@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils"; // Make sure to import cn utility
+import { cn } from "@/lib/utils";
 
 const navItems = [
     {
@@ -29,6 +29,7 @@ const NavItems = () => {
                     href={href}
                     key={label}
                     className={cn(
+                        "text-gray-600 hover:text-gray-900 transition-colors",
                         pathname === href && 'text-primary font-semibold'
                     )}
                 >
